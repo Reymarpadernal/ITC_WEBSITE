@@ -406,35 +406,6 @@ function createSnowflake() {
     setTimeout(() => snowflake.remove(), 8000);
 }
 setInterval(createSnowflake, 200);
-
-// --- Santa flying animation ---
-const canvas = document.getElementById('santa-canvas');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-// Load Santa image
-const santa = new Image();
-santa.src = 'https://i.ibb.co/3yX2YjF/santa.png'; // placeholder Santa image with reindeer
-
-let santaX = -200;
-let santaY = 100;
-
-function drawSanta() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(santa, santaX, santaY, 200, 100);
-    santaX += 2;
-    if (santaX > canvas.width + 200) santaX = -200;
-    requestAnimationFrame(drawSanta);
-}
-
-santa.onload = drawSanta;
-
-// Update canvas size on resize
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
 </script>
 
 </html>
