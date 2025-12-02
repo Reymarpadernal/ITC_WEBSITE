@@ -1,0 +1,9 @@
+- [ ] Add favicon link to index.html
+- [ ] Add favicon link to about.html
+- [ ] Add favicon link to products.html
+- [ ] Add favicon link to single.html
+- [ ] Add favicon link to trip-single.html
+- [ ] Add favicon link to main.html
+- [ ] Update scss/_site-navbar.scss with modern nav styles (clean, minimal, hover animations: color change, underline slide-in, scale, glow, transitions)
+- [ ] Compile SCSS to CSS (css/style.css)
+- [ ] Test responsiveness and functionality
